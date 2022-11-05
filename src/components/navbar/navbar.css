@@ -1,0 +1,35 @@
+.navbar__elements{
+    margin-top: 0;
+    padding-top: 52px;
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+}
+
+.navbar__element{
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar__element:nth-child(2){
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.navbar__element:nth-child(1)::before{
+    content: url('./blackBeans.svg');
+    position: absolute;
+    transform: translateX(-40px) translateY(-20px);
+    
+}
+
+.navbar__element:nth-child(1) {
+    position: relative;
+    
+
+}

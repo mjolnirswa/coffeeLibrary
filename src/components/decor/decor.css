@@ -1,0 +1,30 @@
+.decor {
+    margin-top: 30px;
+    position: relative;
+}
+
+.decor__img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.decor::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: #000000;
+    position: absolute;
+    transform: translateX(760px) translateY(-15px);
+}
+
+.decor::before{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: #000000;
+    position: absolute;
+    transform: translateX(647px) translateY(13px);
+}
