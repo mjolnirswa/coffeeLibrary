@@ -1,15 +1,15 @@
 import {NavLink} from 'react-router-dom';
-
+import Filter from './filter';
 import Footer from '../../footer/footer';
-import CoffeineCalc from './calculator';
-import DecorImg from './decor.svg'
-import coffee from './coffee.png';
-import './pleasure.css';
 
-const Pleasure = () => {
+import DecorImg from './decor.svg';
+import aboutBeans from './aboutourbeans.png';
+import './catalog.css';
+
+const Catalog = () => {
     return (
         <>
-            <div className="header_pleasure">
+            <div className="catalog__header">
                 <div className = 'nav'>
                     <ul className="nav__elements">
                         <li className="nav__element"><NavLink end to ='/' style = {{color: '#FFFFFF' , textDecoration : 'inherit'}}>Coffee house</NavLink></li>
@@ -18,17 +18,17 @@ const Pleasure = () => {
                     </ul>
                 </div>
 
-                <h1 className='title_pleasure'>For your pleasure</h1>
+                <h1>Our Coffee</h1>
             </div>
 
             <div className="about_pleasure">
                 <div className="about__elements">
                     <div className="about__img">
-                        <img src={coffee} alt="coffee" />
+                        <img src={aboutBeans} alt="coffee" />
                     </div>
 
                     <div className="about__descr">
-                        <h2>About our goods</h2>
+                        <h2>About our beans</h2>
                         <div className="decor_pleasure">
                             <img src={DecorImg} alt="img" className="decor__img_pleasure" />
                         </div>
@@ -47,11 +47,11 @@ const Pleasure = () => {
                 <hr className='about__element'></hr>
             </div>
 
-            <CoffeineCalc></CoffeineCalc>
+            <Filter></Filter>
 
             <Footer></Footer>
         </>
     )
 }
 
-export default Pleasure;
+export default Catalog;

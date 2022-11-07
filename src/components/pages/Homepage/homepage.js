@@ -1,4 +1,4 @@
-import {NavLink} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 import Vector from './Vector.svg';
 import './homepage.css';
 import FirstBest from './815O9ktyfUL.png';
@@ -13,9 +13,9 @@ const Homepage = () => {
             <div className = 'header header_homepage'>
                 <div className = 'nav'>
                     <ul className="nav__elements">
-                        <li className="nav__element"><NavLink end to ='/' style = {({ isActive }) => ({color: isActive ? '#FFFFFF': '#FFFFFF'})}>Coffee house</NavLink></li>
-                        <li className="nav__element"><NavLink end to ='/catalog' style = {({ isActive }) => ({color: isActive ? '#FFFFFF': '#FFFFFF'})}>Our coffee</NavLink></li>
-                        <li className="nav__element"><NavLink end to = 'pleasure' style = {({ isActive }) => ({color: isActive ? '#FFFFFF': '#FFFFFF'})}>For your pleasure</NavLink></li>
+                        <li className="nav__element"><NavLink end to ='/' style = {{color: '#FFFFFF' , textDecoration : 'inherit'}}>Coffee house</NavLink></li>
+                        <li className="nav__element"><NavLink end to ='/catalog' style = {{color: '#FFFFFF' , textDecoration : 'inherit'}}>Our coffee</NavLink></li>
+                        <li className="nav__element"><NavLink end to = '/pleasure' style = {{color: '#FFFFFF' , textDecoration : 'inherit'}}>For your pleasure</NavLink></li>
                     </ul>
                 </div>
 
@@ -26,7 +26,14 @@ const Homepage = () => {
                     </div>
                     <p>We makes every day full of energy and taste</p>
                     <p>Want to try our beans?</p>
-                    <button className='description__button' type='button'>More</button>
+                    <Link 
+                        className="description__button"
+                        role="button"
+                        to="/catalog"
+                        style = {{color: '#FFFFFF', textDecoration: 'inherit' , textAlign: 'center', paddingTop: '5px'}}
+                        > 
+                        More
+                    </Link>
                     <div className="bottom">1</div>
                 </div>
             </div>

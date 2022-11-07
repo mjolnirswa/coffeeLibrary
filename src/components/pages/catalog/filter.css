@@ -1,0 +1,84 @@
+.looking_for {
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.looking_for p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+.filter__input {
+    width: 180px;
+    height: 30px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border: 0px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.filter__input::placeholder {
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.coffee_button{
+    width: 170px;
+    height: 42px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 45px;
+    box-shadow: 2px 2px 16px 3px rgba(187, 199, 208, 0.21);
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.coffee__grid {
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+    column-gap: 70px;
+    row-gap: 60px;
+    margin: 0 auto;
+    margin-top: 60px;
+    justify-content: center;
+    list-style-type: none;
+
+}
+
+.coffee__item{
+    height: 260px;
+    width: 220px;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.coffee__item-img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
+    background-size: cover;
+    width: 170px;
+    height: 180px;
+}
+
+.coffee__item-name {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin-top: 10px;
+    text-decoration: none;
+}
